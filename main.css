@@ -124,38 +124,313 @@ html {
     
 }
 
-.titlevents {
-    width: 80%;
-    margin: 80px auto;
-}
-  
-.title h1 {
-    font-size: 1.7rem;
-     
-}
-
 .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    margin: 3rem auto;    
 }
- 
-.eventsphp {
-    height: 20rem; 
-    width:  30rem;
-} 
 
-.blurb {
-     width: 40%;
-    display: inline-block;
-    text-align: center;
+.title h1 {
+    font-size: 1.5rem;
 }
 
 .events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+ 
+.eventsphp {
+    width: 80%;
+    height: 70%  
+}
+
+.blurb {
+    width: 40%;
+    text-align: center;
+}
+
+.blurb h3 {
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    color:rgba(1, 91, 7, 0.8);
+    font-weight: 600;
+}
+
+.blurb p {
+    font-size: 1rem;
+}
+
+.main2 {
     width: 100vw;
-    margin-top: 4rem;
+    height: 70vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(assets/pexels-oziel-gómez-840719.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+     
+}
+
+.line2 {
+    width: 100%;
+    height: 4px;
+    background: rgba(1, 91, 7, 0.8);
+}
+
+.main2 p {
+     color: floralwhite;
+}
+ .main2 h1 {
+     font-size: 2rem;
+     color: floralwhite;
+}
+
+.center-text {
+    position: relative;
+    text-align: center;
+    width: 55%;
+    top: 25%   
+}
+
+.main3 {
+    display: flex;
+    width: 100vw;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
     
 }
+
+.col2{
+    width: 60%;
+}
+
+.col1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.col1 h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.col1 p {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main3php {
+    width: 40%;
+    margin: 8px; 
+}
+
+.image-gallery {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.line3 {
+    width: 50%;
+    height: 3px;
+    background-color: rgba(1, 91, 7, 0.8);
+}
+
+.btn1 {
+    text-decoration: none;
+    background-color: rgba(1, 91, 7, 0.8);
+    color: black;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.btn1:hover {
+    background-color: palevioletred;
+}
+
+.footer {
+    width: 100vw;
+    height: 13vh;
+    background-color: rgba(124, 109, 186, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 750px) {
+    .main3 h1 {
+        font-size: 1.3rem;
+    }
+    .main3 p {
+        font-size: 1rem;
+    }
+     .btn1 {
+        font-size: 1.2rem;
+    }
+    .nav ul a {
+        margin: auto 5px;
+        font-size: 1.2rem;
+    }
+    .footer p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .nav ul a {
+        font-size: .8rem;
+        margin: auto 4px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .titles h2 {
+        font-size: 1.2rem;
+    }
+    .titles h1 {
+        font-size: 1.6rem;
+    }
+    .title h1 {
+font-size: 1.2rem;
+    }
+    .events {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blurb {
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+    .blurb h3 { 
+        font-size: 1.1rem;
+    }
+    .blurb p {
+        font-size: .8rem;
+    }
+    .events {
+        margin-bottom: 0;
+    }
+    .main2 h1 {
+        font-size: 1.2rem;
+    }
+    .main2 p {
+        font-size: .8rem;
+    }
+     .main3 h1 {
+        font-size: .8rem;
+    }
+    .main3 p {
+        font-size: .6rem;
+    }
+     .btn1 {
+        font-size: 1rem;
+    }
+    .footer p {
+        font-size: .5rem;
+    }
+    
+}
+@media (max-width: 388px) {
+     .nav ul a {
+        font-size: .5rem;
+        margin: auto 4px;
+    }
+    .logo {
+        font-size: .7rem;
+    }
+    .title  {
+        margin-top: 1rem;
+        margin-bottom: .6rem;
+    }
+    .main3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .col1 {
+        width: 90%;
+    }
+    .col2 {
+        width: 90%;
+    }
+    .col1 h1 {
+        font-size: 1rem;
+    }
+    .col1 p {
+        font-size: .7rem;
+    }
+    .btn1 {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer p {
+        font-size: .4rem;
+    }
+    .footer {
+        height: 8vh;
+    }
+}
+
+@media (max-width: 280px) {
+    .titles h2 {
+        font-size: .9rem;
+    }
+     .titles h1 {
+        font-size: 1.2rem;
+         margin-top: 3px;
+    }
+     .nav ul a {
+        margin: auto 3px;
+        font-size: .45rem;
+    }
+    .logo {
+        font-size: .7rem
+    }   
+    .footer {
+        line-height: .7rem;
+    }
+}
+
+@media (max-width: 250px) {
+     .footer p {
+        font-size: .3rem;
+    }
+    .footer {
+        height: 6.5vh;
+    }
+     .nav ul a {
+        margin: auto 1.5px;
+        font-size: .45rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
