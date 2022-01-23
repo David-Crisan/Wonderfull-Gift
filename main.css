@@ -91,8 +91,18 @@ html {
     align-items: center;    
 }
 
-.nav a:hover {
-    background-color:rgba(4, 133, 13, 0.8);
+.nav ul li::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgba(1, 91, 7, 0.8);
+  display: block;
+  margin: auto;
+  transition: 0.5s; 
+}
+
+.nav ul li:hover::after {
+    width: 90%;
     transition: 1s;
 }
 
@@ -295,6 +305,9 @@ html {
     .logo {
         font-size: 1rem;
     }
+    .nav ul li::after {
+        height: 2px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -342,16 +355,6 @@ font-size: 1.2rem;
     .footer p {
         font-size: .5rem;
     }
-    
-}
-@media (max-width: 388px) {
-     .nav ul a {
-        font-size: .5rem;
-        margin: auto 4px;
-    }
-    .logo {
-        font-size: .7rem;
-    }
     .title  {
         margin-top: 1rem;
         margin-bottom: .6rem;
@@ -378,6 +381,20 @@ font-size: 1.2rem;
     }
     .btn1 {
         font-size: .9rem;
+    }
+    
+}
+@media (max-width: 388px) {
+     .nav ul a {
+        font-size: .5rem;
+        margin: auto 4px;
+    }
+    .logo {
+        font-size: .7rem;
+    }
+    .title  {
+        margin-top: 1rem;
+        margin-bottom: .6rem;
     }
 }
 
